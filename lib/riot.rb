@@ -10,4 +10,5 @@ end
 
 require 'riot/client'
 require 'riot/request'
+require 'riot/account_request'
 require 'riot/lol/summoner_request'
