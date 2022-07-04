@@ -3,6 +3,11 @@ require 'httparty'
 require 'uri'
 
 module Riot
+  module Lol; end
+  module Val; end
+  module Tft; end
 end
 
-require 'riot/autoloader'
+require 'riot/client'
+require 'riot/request'
+require 'riot/lol/summoner_request'

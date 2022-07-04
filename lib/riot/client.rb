@@ -8,7 +8,7 @@ module Riot
     end
 
     def summoner
-      @summoner_request ||= SummonerRequest.new(api_key, 'lol', region)
+      @summoner_request ||= Lol::SummonerRequest.new(api_key, 'lol', region)
     end
   end
 end
