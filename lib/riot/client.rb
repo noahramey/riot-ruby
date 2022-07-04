@@ -11,6 +11,10 @@ module Riot
       @account_request ||= AccountRequest.new(api_key, '', region)
     end
 
+    def champion_mastery
+      @champion_mastery ||= Lol::ChampionMasteryRequest.new(api_key, 'lol', region)
+    end
+
     def summoner
       @summoner_request ||= Lol::SummonerRequest.new(api_key, 'lol', region)
     end
